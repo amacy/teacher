@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      examples:
+        title: Examples
+    examples:
+      admin:
+        examples:
+          actions:
+            create_new: Lag en ny Example
+            reorder: Endre rekkefølgen på Examples
+            reorder_done: Ferdig å endre rekkefølgen Examples
+          records:
+            title: Examples
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Examples enda. Klikk på "Lag en ny Example" for å legge til din første example.
+          example:
+            view_live_html: Vis hvordan denne example ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne example
+            delete: Fjern denne example permanent
+      examples:
+        show:
+          other: Andre Examples
+  activerecord:
+    attributes:
+      'refinery/examples/example':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      long_term_assignments:
+        title: Long Term Assignments
+    long_term_assignments:
+      admin:
+        long_term_assignments:
+          actions:
+            create_new: 建立新的 Long Term Assignment
+            reorder: 对 Long Term Assignments 重新排序
+            reorder_done: 对 Long Term Assignments 的重新排序结束
+          records:
+            title: Long Term Assignments
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Long Term Assignments yet. Click "Add New Long Term Assignment" to add your first long term assignment.
+            no_items_yet: 目前没有 Long Term Assignments . 点击 "Add New Long Term Assignment" 创建一个long term assignment.
+          long_term_assignment:
+            view_live_html: 查看 long term assignment 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 long term assignment
+            delete: 永久删除 long term assignment
+      long_term_assignments:
+        show:
+          other: 其他 Long Term Assignments
+  activerecord:
+    attributes:
+      'refinery/long_term_assignments/long_term_assignment':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      examples:
+        title: Examples
+    examples:
+      admin:
+        examples:
+          actions:
+            create_new: Maak een nieuwe Example
+            reorder: Wijzig de volgorde van de Examples
+            reorder_done: Klaar met het wijzingen van de volgorde van de Examples
+          records:
+            title: Examples
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Examples. Druk op 'Maak een nieuwe Example' om de eerste aan te maken.
+          example:
+            view_live_html: Bekijk deze example op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze example
+            delete: Verwijder deze example voor eeuwig
+      examples:
+        show:
+          other: Andere Examples
+  activerecord:
+    attributes:
+      'refinery/examples/example':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

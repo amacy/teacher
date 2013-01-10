@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      classworks:
+        title: Classworks
+#        article: masculino/femenino
+    classworks:
+      admin:
+        classworks:
+          actions:
+            create_new: Crear nuevo classwork
+            reorder: Reordenar classworks
+            reorder_done: Reordenación de classworks completada
+          records:
+            title: Classworks
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay classworks todavía. Pulsa en "Crear nuevo Classwork" para crear tu primer classwork.
+          classwork:
+            view_live_html: Ver este classwork como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este classwork
+            delete: Borrar este classwork para siempre
+      classworks:
+        show:
+          other: Otros classworks
+  activerecord:
+    attributes:
+      'refinery/classworks/classwork':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::LongTermAssignments::Admin::LongTermAssignmentsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.long_term_assignments_admin_long_term_assignments_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_long_term_assignments_admin_long_term_assignment_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::LongTermAssignments::Admin::LongTermAssignmentsController.sortable? && ::Refinery::LongTermAssignments::LongTermAssignment.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Long Term Assignments"),
+                 refinery.long_term_assignments_admin_long_term_assignments_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Long Term Assignments"),
+                 refinery.long_term_assignments_admin_long_term_assignments_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

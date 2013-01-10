@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      classworks:
+        title: Classworks
+    classworks:
+      admin:
+        classworks:
+          actions:
+            create_new: 建立新的 Classwork
+            reorder: 对 Classworks 重新排序
+            reorder_done: 对 Classworks 的重新排序结束
+          records:
+            title: Classworks
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Classworks yet. Click "Add New Classwork" to add your first classwork.
+            no_items_yet: 目前没有 Classworks . 点击 "Add New Classwork" 创建一个classwork.
+          classwork:
+            view_live_html: 查看 classwork 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 classwork
+            delete: 永久删除 classwork
+      classworks:
+        show:
+          other: 其他 Classworks
+  activerecord:
+    attributes:
+      'refinery/classworks/classwork':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      homeworks:
+        title: Homeworks
+    homeworks:
+      admin:
+        homeworks:
+          actions:
+            create_new: 建立新的 Homework
+            reorder: 对 Homeworks 重新排序
+            reorder_done: 对 Homeworks 的重新排序结束
+          records:
+            title: Homeworks
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Homeworks yet. Click "Add New Homework" to add your first homework.
+            no_items_yet: 目前没有 Homeworks . 点击 "Add New Homework" 创建一个homework.
+          homework:
+            view_live_html: 查看 homework 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 homework
+            delete: 永久删除 homework
+      homeworks:
+        show:
+          other: 其他 Homeworks
+  activerecord:
+    attributes:
+      'refinery/homeworks/homework':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

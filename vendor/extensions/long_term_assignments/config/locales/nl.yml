@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      long_term_assignments:
+        title: Long Term Assignments
+    long_term_assignments:
+      admin:
+        long_term_assignments:
+          actions:
+            create_new: Maak een nieuwe Long Term Assignment
+            reorder: Wijzig de volgorde van de Long Term Assignments
+            reorder_done: Klaar met het wijzingen van de volgorde van de Long Term Assignments
+          records:
+            title: Long Term Assignments
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Long Term Assignments. Druk op 'Maak een nieuwe Long Term Assignment' om de eerste aan te maken.
+          long_term_assignment:
+            view_live_html: Bekijk deze long term assignment op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze long term assignment
+            delete: Verwijder deze long term assignment voor eeuwig
+      long_term_assignments:
+        show:
+          other: Andere Long Term Assignments
+  activerecord:
+    attributes:
+      'refinery/long_term_assignments/long_term_assignment':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

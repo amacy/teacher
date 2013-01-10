@@ -1,0 +1,31 @@
+sk:
+  refinery:
+    plugins:
+      homeworks:
+        title: Homeworks
+    homeworks:
+      admin:
+        homeworks:
+          actions:
+            create_new: Pridať Homework
+            reorder: Preusporiadať Homeworks
+            reorder_done: Koniec radenia Homeworks
+          records:
+            title: Homeworks
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Homeworks. Kliknite na "Pridať Homework" pre pridanie prvého homework.
+          homework:
+            view_live_html: Zobraziť náhľad homework<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť homework
+            delete: Zmazať homework
+      homeworks:
+        show:
+          other: Daľšie Homeworks
+  activerecord:
+    attributes:
+      'refinery/homeworks/homework':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

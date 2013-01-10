@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      examples:
+        title: Examples
+    examples:
+      admin:
+        examples:
+          actions:
+            create_new: 建立新的 Example
+            reorder: 对 Examples 重新排序
+            reorder_done: 对 Examples 的重新排序结束
+          records:
+            title: Examples
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Examples yet. Click "Add New Example" to add your first example.
+            no_items_yet: 目前没有 Examples . 点击 "Add New Example" 创建一个example.
+          example:
+            view_live_html: 查看 example 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 example
+            delete: 永久删除 example
+      examples:
+        show:
+          other: 其他 Examples
+  activerecord:
+    attributes:
+      'refinery/examples/example':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      homeworks:
+        title: Homeworks
+#        article: masculino/femenino
+    homeworks:
+      admin:
+        homeworks:
+          actions:
+            create_new: Crear nuevo homework
+            reorder: Reordenar homeworks
+            reorder_done: Reordenación de homeworks completada
+          records:
+            title: Homeworks
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay homeworks todavía. Pulsa en "Crear nuevo Homework" para crear tu primer homework.
+          homework:
+            view_live_html: Ver este homework como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este homework
+            delete: Borrar este homework para siempre
+      homeworks:
+        show:
+          other: Otros homeworks
+  activerecord:
+    attributes:
+      'refinery/homeworks/homework':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

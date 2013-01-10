@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      homeworks:
+        title: Homeworks
+    homeworks:
+      admin:
+        homeworks:
+          actions:
+            create_new: Lag en ny Homework
+            reorder: Endre rekkefølgen på Homeworks
+            reorder_done: Ferdig å endre rekkefølgen Homeworks
+          records:
+            title: Homeworks
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Homeworks enda. Klikk på "Lag en ny Homework" for å legge til din første homework.
+          homework:
+            view_live_html: Vis hvordan denne homework ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne homework
+            delete: Fjern denne homework permanent
+      homeworks:
+        show:
+          other: Andre Homeworks
+  activerecord:
+    attributes:
+      'refinery/homeworks/homework':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

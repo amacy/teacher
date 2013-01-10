@@ -1,0 +1,20 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(long_term_assignment) -%>">
+  <span class='title'>
+    <%= long_term_assignment.title %>
+
+  </span>
+  <span class='actions'>
+    
+    <%= link_to refinery_icon_tag("application_go.png"), refinery.long_term_assignments_long_term_assignment_path(long_term_assignment),
+        :title => t('.view_live_html'),
+        :target => "_blank" %>
+    
+    <%= link_to refinery_icon_tag("application_edit.png"), refinery.edit_long_term_assignments_admin_long_term_assignment_path(long_term_assignment),
+         :title => t('.edit') %>
+    <%= link_to refinery_icon_tag("delete.png"), refinery.long_term_assignments_admin_long_term_assignment_path(long_term_assignment),
+        :class => "cancel confirm-delete",
+        :title => t('.delete'),
+        :confirm => t('message', :scope => 'refinery.admin.delete', :title => long_term_assignment.title),
+        :method => :delete %>
+  </span>
+</li>

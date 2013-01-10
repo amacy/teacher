@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      examples:
+        title: Examples
+#        article: masculino/femenino
+    examples:
+      admin:
+        examples:
+          actions:
+            create_new: Crear nuevo example
+            reorder: Reordenar examples
+            reorder_done: Reordenación de examples completada
+          records:
+            title: Examples
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay examples todavía. Pulsa en "Crear nuevo Example" para crear tu primer example.
+          example:
+            view_live_html: Ver este example como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este example
+            delete: Borrar este example para siempre
+      examples:
+        show:
+          other: Otros examples
+  activerecord:
+    attributes:
+      'refinery/examples/example':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Examples::Admin::ExamplesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.examples_admin_examples_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_examples_admin_example_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Examples::Admin::ExamplesController.sortable? && ::Refinery::Examples::Example.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Examples"),
+                 refinery.examples_admin_examples_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Examples"),
+                 refinery.examples_admin_examples_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

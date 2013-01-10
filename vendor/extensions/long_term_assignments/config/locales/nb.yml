@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      long_term_assignments:
+        title: Long Term Assignments
+    long_term_assignments:
+      admin:
+        long_term_assignments:
+          actions:
+            create_new: Lag en ny Long Term Assignment
+            reorder: Endre rekkefølgen på Long Term Assignments
+            reorder_done: Ferdig å endre rekkefølgen Long Term Assignments
+          records:
+            title: Long Term Assignments
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Long Term Assignments enda. Klikk på "Lag en ny Long Term Assignment" for å legge til din første long term assignment.
+          long_term_assignment:
+            view_live_html: Vis hvordan denne long term assignment ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne long term assignment
+            delete: Fjern denne long term assignment permanent
+      long_term_assignments:
+        show:
+          other: Andre Long Term Assignments
+  activerecord:
+    attributes:
+      'refinery/long_term_assignments/long_term_assignment':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

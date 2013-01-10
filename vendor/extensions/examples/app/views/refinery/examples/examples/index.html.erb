@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="examples">
+    <% @examples.each do |example| %>
+      <li>
+        <%= link_to example.title, refinery.examples_example_path(example) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="classworks">
+    <% @classworks.each do |classwork| %>
+      <li>
+        <%= link_to classwork.title, refinery.classworks_classwork_path(classwork) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

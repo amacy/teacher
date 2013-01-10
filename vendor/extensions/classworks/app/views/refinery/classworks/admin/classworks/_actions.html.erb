@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Classworks::Admin::ClassworksController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.classworks_admin_classworks_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_classworks_admin_classwork_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Classworks::Admin::ClassworksController.sortable? && ::Refinery::Classworks::Classwork.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Classworks"),
+                 refinery.classworks_admin_classworks_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Classworks"),
+                 refinery.classworks_admin_classworks_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

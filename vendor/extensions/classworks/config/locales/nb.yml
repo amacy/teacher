@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      classworks:
+        title: Classworks
+    classworks:
+      admin:
+        classworks:
+          actions:
+            create_new: Lag en ny Classwork
+            reorder: Endre rekkefølgen på Classworks
+            reorder_done: Ferdig å endre rekkefølgen Classworks
+          records:
+            title: Classworks
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Classworks enda. Klikk på "Lag en ny Classwork" for å legge til din første classwork.
+          classwork:
+            view_live_html: Vis hvordan denne classwork ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne classwork
+            delete: Fjern denne classwork permanent
+      classworks:
+        show:
+          other: Andre Classworks
+  activerecord:
+    attributes:
+      'refinery/classworks/classwork':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

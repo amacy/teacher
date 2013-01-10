@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      homeworks:
+        title: Homeworks
+    homeworks:
+      admin:
+        homeworks:
+          actions:
+            create_new: Maak een nieuwe Homework
+            reorder: Wijzig de volgorde van de Homeworks
+            reorder_done: Klaar met het wijzingen van de volgorde van de Homeworks
+          records:
+            title: Homeworks
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Homeworks. Druk op 'Maak een nieuwe Homework' om de eerste aan te maken.
+          homework:
+            view_live_html: Bekijk deze homework op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze homework
+            delete: Verwijder deze homework voor eeuwig
+      homeworks:
+        show:
+          other: Andere Homeworks
+  activerecord:
+    attributes:
+      'refinery/homeworks/homework':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="long_term_assignments">
+    <% @long_term_assignments.each do |long_term_assignment| %>
+      <li>
+        <%= link_to long_term_assignment.title, refinery.long_term_assignments_long_term_assignment_path(long_term_assignment) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

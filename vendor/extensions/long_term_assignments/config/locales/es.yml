@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      long_term_assignments:
+        title: Long Term Assignments
+#        article: masculino/femenino
+    long_term_assignments:
+      admin:
+        long_term_assignments:
+          actions:
+            create_new: Crear nuevo long term assignment
+            reorder: Reordenar long term assignments
+            reorder_done: Reordenación de long term assignments completada
+          records:
+            title: Long Term Assignments
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay long term assignments todavía. Pulsa en "Crear nuevo Long Term Assignment" para crear tu primer long term assignment.
+          long_term_assignment:
+            view_live_html: Ver este long term assignment como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este long term assignment
+            delete: Borrar este long term assignment para siempre
+      long_term_assignments:
+        show:
+          other: Otros long term assignments
+  activerecord:
+    attributes:
+      'refinery/long_term_assignments/long_term_assignment':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

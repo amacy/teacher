@@ -1,0 +1,31 @@
+sk:
+  refinery:
+    plugins:
+      long_term_assignments:
+        title: Long Term Assignments
+    long_term_assignments:
+      admin:
+        long_term_assignments:
+          actions:
+            create_new: Pridať Long Term Assignment
+            reorder: Preusporiadať Long Term Assignments
+            reorder_done: Koniec radenia Long Term Assignments
+          records:
+            title: Long Term Assignments
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Long Term Assignments. Kliknite na "Pridať Long Term Assignment" pre pridanie prvého long term assignment.
+          long_term_assignment:
+            view_live_html: Zobraziť náhľad long term assignment<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť long term assignment
+            delete: Zmazať long term assignment
+      long_term_assignments:
+        show:
+          other: Daľšie Long Term Assignments
+  activerecord:
+    attributes:
+      'refinery/long_term_assignments/long_term_assignment':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File

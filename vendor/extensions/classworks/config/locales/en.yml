@@ -1,0 +1,31 @@
+en:
+  refinery:
+    plugins:
+      classworks:
+        title: Classworks
+    classworks:
+      admin:
+        classworks:
+          actions:
+            create_new: Add New Classwork
+            reorder: Reorder Classworks
+            reorder_done: Done Reordering Classworks
+          records:
+            title: Classworks
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Classworks yet. Click "Add New Classwork" to add your first classwork.
+          classwork:
+            view_live_html: View this classwork live <br/><em>(opens in a new window)</em>
+            edit: Edit this classwork
+            delete: Remove this classwork forever
+      classworks:
+        show:
+          other: Other Classworks
+  activerecord:
+    attributes:
+      'refinery/classworks/classwork':
+        title: Title
+        date: Date
+        photo: Photo
+        copy: Copy
+        file: File
